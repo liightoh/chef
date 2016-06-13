@@ -30,22 +30,6 @@ catch(Exception $e) {
 
 */
 
-if (isset($_POST['login']) && !empty($_POST['login'])
-&& isset($_POST['password']) && !empty($_POST['password'])
-
-)
-{
-
-
-    $sql = "INSERT INTO author SET login = :login, password = :password";
-    $req = $db->prepare($sql);
-    $req->execute(array(
-        ':login' => $_POST["login"],
-        ':password' => $_POST["password"],
-    ));
-}
-
-
 
 //Requete SQL 
 
