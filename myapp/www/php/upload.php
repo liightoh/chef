@@ -27,8 +27,8 @@ catch(Exception $e) {
 1) ICI, RECUPERATION GET OU POST
 2) SOTCKAGE EN VARIABLES
 
-
 */
+
 
 
 //Requete SQL 

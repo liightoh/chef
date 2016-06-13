@@ -3,9 +3,9 @@
 $data = json_decode(file_get_contents("php://input"));
 
 $db_host = "localhost";
-$db_user = "root";
-$db_password = "";
-$db_name = "chefdb";
+$db_user = "localhost";
+$db_password = "localhost";
+$db_ = "localhost";
 
 $log = mysql_real_escape_string($data->log);
 $pass = mysql_real_escape_string($data->pass);
