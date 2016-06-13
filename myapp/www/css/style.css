@@ -1,0 +1,119 @@
+/*home*/
+
+
+.bar .title.title-left {
+    text-align: center;
+}
+
+.bar{
+    background-color: #5d3921;
+}
+
+.title{
+    color: white;
+    left: 0px!important;
+    right: 0px!important;
+}
+
+.logo {
+   background-color: #141b2e;
+    height: 18%;
+
+}
+
+.logochef {
+    width: 80%;
+    height: 100%;
+    padding: 2%;
+    margin-left: 13%;
+}
+
+.categorie {
+    background-image: url("../img/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.categorie2{
+    padding-top: 25%;
+}
+
+
+.buttonmilieu {
+    width: 100%;
+}
+
+
+#entree {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url("../img/imgentree.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.5em;
+    font-weight : bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+#platchaud {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 20%;
+    background-image: url("../img/imgplatchaud.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.5em;
+    font-weight : bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+#platfroid {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url("../img/imgplatfroid.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.5em;
+    font-weight : bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+#patisserie {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url("../img/imgpatisserie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.1em;
+    font-weight : bold;
+    font-weight: 900;
+}
+
+
+
+
+.card .item{
+    background-color: #141b2e;
+    text-decoration: none;
+}
+
+h2{
+    color: white;
+}
+
+
+
+
