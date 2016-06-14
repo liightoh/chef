@@ -21,22 +21,22 @@ catch(Exception $e) {
     exit('Erreur : ' . $e->getMessage());
 }
 
-
-/*
-
-1) ICI, RECUPERATION GET OU POST
-2) SOTCKAGE EN VARIABLES
-
-*/
+    if (isset($_POST['title']) && !empty($_POST['title'])
+        && isset($_POST['content']) && !empty($_POST['content'])){
 
 
+        //Requete SQL
 
-//Requete SQL 
+        $sql = "INSERT INTO article SET title = :title, content = :content, date_insert = NOW()";
+        $request = $db->prepare($sql);
+        $request->execute(array(
+            ':title' => $_POST["title"],
+            ':content' => $_POST["content"],
+        ));
 
-    $sql = "INSERT INTO NOMDETATABLE(colonne1, colonne2, colonne3) VALUES ('$variable1', '$variable2', '$variable3')";
-    $req = $db->prepare($sql);
-    $result = $req->execute();
-    
+        echo "Article ajouté avec succès";
+    }
+
 
     //Compatible IONIC
     echo $json_response = json_encode($result);

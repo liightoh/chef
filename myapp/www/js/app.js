@@ -117,6 +117,7 @@ angular.module('starter', ['ionic', 'auth0', 'angular-storage', 'angular-jwt'])
   $stateProvider.state('patisserie', {
     url:'/patisserie',
     templateUrl:'templates/patisserie.html',
+    controller:'PatisserieCtrl',
   }),
 
   $stateProvider.state('recette', {
@@ -168,6 +169,10 @@ angular.module('starter', ['ionic', 'auth0', 'angular-storage', 'angular-jwt'])
     })
 
 
+    .controller('PatisserieCtrl', function ($scope){
+
+    })
+
 .controller('UserInfoCtrl', function($scope, auth, store) {
   $scope.auth = auth;
   $scope.logout = function() {
@@ -176,4 +181,5 @@ angular.module('starter', ['ionic', 'auth0', 'angular-storage', 'angular-jwt'])
     store.remove('token');
   }
 });
+
 
