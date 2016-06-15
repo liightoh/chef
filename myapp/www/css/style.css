@@ -102,8 +102,13 @@
     font-weight: 900;
 }
 
+.imgrecette {
+    width: 70%;
+}
 
-
+.gras {
+    font-weight: bold;
+}
 
 .card .item{
     background-color: #141b2e;
