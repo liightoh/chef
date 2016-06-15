@@ -24,8 +24,8 @@ catch(Exception $e) {
     if (isset($_POST['title']) && !empty($_POST['title'])
         && isset($_POST['content']) && !empty($_POST['content'])){
 
-        $titre = $_POST['title'],
-        $content = $_POST['content'],
+        $titre = $_POST['title'];
+        $content = $_POST['content'];
 
         //Requete SQL
 
