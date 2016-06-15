@@ -119,21 +119,39 @@ angular.module('starter', ['ionic'])
     templateUrl:'templates/settings.html',
   })
 
+  $stateProvider.state('recettefondant', {
+    url:'/recettefondant',
+    templateUrl:'templates/recettefondant.html',
+  }),
+
+      $stateProvider.state('recettegateauyahourt', {
+        url:'/recettegateauyahourt',
+        templateUrl:'templates/recettegateauyahourt.html',
+      }),
+      $stateProvider.state('recettetartefraise', {
+        url:'/recettetartefraise',
+        templateUrl:'templates/recettetartefraise.html',
+      }),
+
+      $stateProvider.state('tartecitron', {
+        url:'/tartecitron',
+        templateUrl:'templates/tartecitron.html',
+      }),
 
     /*page d'acceuil */
 
   $urlRouterProvider.otherwise('home')
 
-
 })
 
-    .controller('LoginCtrl', function($scope, $state, $http) {
+.controller('PatisserieCtrl', function($scope){
+    $scope.addRecette = function (title, content) {
 
-      $scope.insertdata=function(){
-        $http.post(insert.php,{'log':$scope.log,'pass':$scope.pass})
-            .success(function(data,status,header,config){
-              console.log("data inserted  successfully")
-            });
-      }})
+      $http.post("http://baptistebriois.fr/projets/learneat/ajax/addRecette.php?name=" + name + "&ingredients=" + ingredients + "&description=" + description + "&img=" + imgnom + "&price=" + price + "&time=" + time + "&type=" + type + "&difficulty=" + difficulty + "&fbuser=" + fbuser + "&fbid=" + fbid + "&fbpicture=" + fbpicture).success(function (data) {
+        alert("La recette a bien été envoyée");
+      });
+      console.log(fbuser);
+    }
 
+})
 

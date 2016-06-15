@@ -24,10 +24,12 @@ catch(Exception $e) {
     if (isset($_POST['title']) && !empty($_POST['title'])
         && isset($_POST['content']) && !empty($_POST['content'])){
 
+        $titre = $_POST['title'],
+        $content = $_POST['content'],
 
         //Requete SQL
 
-        $sql = "INSERT INTO article SET title = :title, content = :content, date_insert = NOW()";
+        $sql = "INSERT INTO article SET title = :title, content = :content ";
         $request = $db->prepare($sql);
         $request->execute(array(
             ':title' => $_POST["title"],
