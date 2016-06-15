@@ -55,6 +55,16 @@ angular.module('starter', ['ionic'])
     templateUrl:'templates/recettesoupe.html',
   })
 
+  $stateProvider.state('recettecake', {
+    url:'/recettecake',
+    templateUrl:'templates/recettecake.html',
+  })
+
+  $stateProvider.state('recettebruschetta', {
+    url:'/recettebruschetta',
+    templateUrl:'templates/recettebruschetta.html',
+  })
+
   $stateProvider.state('platchaud', {
     url:'/platchaud',
     templateUrl:'templates/platchaud.html',
@@ -72,6 +82,16 @@ angular.module('starter', ['ionic'])
   $stateProvider.state('recettegratin', {
     url:'/recettegratin',
     templateUrl:'templates/recettegratin.html',
+  })
+
+  $stateProvider.state('recettecurry', {
+    url:'/recettecurry',
+    templateUrl:'templates/recettecurry.html',
+  })
+
+  $stateProvider.state('recettecourgette', {
+    url:'/recettecourgette',
+    templateUrl:'templates/recettecourgette.html',
   })
 
   $stateProvider.state('platfroid', {
@@ -92,6 +112,16 @@ angular.module('starter', ['ionic'])
   $stateProvider.state('recettegaspacho', {
     url:'/recettegaspacho',
     templateUrl:'templates/recettegaspacho.html',
+  })
+
+  $stateProvider.state('recettetagsaumon', {
+    url:'/recettetagsaumon',
+    templateUrl:'templates/recettetagsaumon.html',
+  })
+
+  $stateProvider.state('recetteveloute', {
+    url:'/recetteveloute',
+    templateUrl:'templates/recetteveloute.html',
   })
 
   $stateProvider.state('patisserie', {
